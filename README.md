@@ -17,20 +17,14 @@ Each SnowCrystal ID is 120 bits or 15 bytes long, and in Big Endian format. The 
       |                                     |       |                             |
 
 
-<br/>
-Timestamp bits: 60
 
-Sequence bits: 12
-
-Node bits: 48
-
-
-<br/>
 **Timestamp**: 60 bits are allocated for the timestamp. This gives us a maximum value of 1152921504606846975 in milliseconds, roughly 36558901 years or upto 36558869 AD.
 <br/>
 **Sequence**: 12 bits are allocated for the sequence. This gives us a maximum of 4096 different sequences, or 4096 unique IDs per millisecond.
 <br/>
 **Node**: 48 bits are allocated for the node. This ensures that we can have a unique set of IDs for every MAC address on the planet (assuming 48 bit MAC addresses).
+<br/>
+**Total**: 120 bits or 15 bytes.
 
 
 Why not just use UUID?
